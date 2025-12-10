@@ -1,0 +1,1 @@
+pnpm install @react-three/drei @react-three/fiber dom-window-manager react react-dom three gsap && pnpm install -D @types/node @types/react @types/react-dom @types/three @vitejs/plugin-react eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh sass typescript vite
