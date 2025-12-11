@@ -557,10 +557,12 @@ export default function header() {
 
   const content = document.createElement('div');
   content.classList.add('content');
-  content.innerHTML = /* html */ `
-        <p>DESIGN AWARD</p>
-        <p>One Page Love</p>
-        <p>February 2023</p>`;
+
+    //content.innerHTML = /* html */ `
+        //<p>DESIGN AWARD</p>
+        //<p>One Page Love</p>
+        //<p>February 2023</p>`;
+  
   messageBox.appendChild(content);
 
   dragElement(messageBox);
@@ -595,6 +597,50 @@ export default function header() {
     sticker.style.zIndex = windowManager.moveOnTop();
   });
 
+  // Navigation bar
+  const navigationBar = document.createElement('nav');
+  navigationBar.id ='header-nav';
+
+ const navItems = [
+  {label: 'Projects', target: '#projects'},
+  {label: 'Contact', target: '#contact'},
+  {label: 'About', target: '#about'},
+  {label: 'Awards', target: '#awards'},
+  {label: 'Gallery', target: '#this-website'},
+ ]
+
+ navItems.forEach(({ label, target }) => {
+  const link = document.createElement('a');
+  link.href = target;
+  link.textContent = label;
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const el = document.querySelector(target);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+  navigationBar.appendChild(link);
+ });
+
+ header.appendChild(navigationBar);
+
+ // Ensure positioning of the navbar
+ // Position navbar after it's in the DOM (so we can measure it)
+requestAnimationFrame(() => {
+  const nameRect = name.getBoundingClientRect();
+  // Position it to the right of the name with some spacing
+  navigationBar.style.top = '58px';
+  navigationBar.style.left = `${nameRect.right + 85}px`; // 30px spacing from name
+  navigationBar.style.right = ''; // ensure right is unset so dragging uses left
+});
+ dragElement(navigationBar);
+ navigationBar.style.zIndex = windowManager.base;
+ navigationBar.addEventListener('mousedown', () => {
+navigationBar.style.zIndex = windowManager.moveOnTop();
+ });
+
+  /*
   // Project Request
   const projectRequest = document.createElement('p');
   projectRequest.classList.add('project-request');
@@ -607,6 +653,8 @@ export default function header() {
   projectRequest.addEventListener('mousedown', () => {
     projectRequest.style.zIndex = windowManager.moveOnTop();
   });
+
+  */
 
   // Japanese
   const japanese = document.createElement('p');

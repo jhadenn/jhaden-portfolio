@@ -23,11 +23,10 @@ export default function ticker() {
   const messages =
     window.innerWidth > 1000
       ? [
-          'WELCOME TO MY PLAYGROUND',
-          'FEEL FREE TO PLAY WITH MY RUBBER DUCK',
-          'CLICK ON ANYTHING COLORFUL FOR A NEW COLOR',
+          'THIS IS MY PORTFOLIO',
+          'THIRD YEAR COMPUTER SCIENCE',
+          'ONTARIO TECH UNIVERSITY',
           'TRY MOVING THINGS AROUND',
-          'SMILEY IS YOUR FRIEND',
         ]
       : ['VISIT THE DESKTOP VERSION FOR THE FULL EXPERIENCE', '•'];
 

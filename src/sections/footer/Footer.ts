@@ -53,7 +53,7 @@ export default function footer() {
 
   // Copyright
   const copyright = document.createElement('p');
-  copyright.id = 'copyright';
+  copyright.id = 'copyrigaht';
   copyright.textContent = '© Michael Kolesidis';
   footer.appendChild(copyright);
 
