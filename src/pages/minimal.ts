@@ -17,7 +17,7 @@
 import projectList from '../data/projects';
 
 document.body.innerHTML += /*html*/ `
-<div id="header">Michael Kolesidis</div>
+<div id="header">Jhaden Christian Goy</div>
 <div id="subheader">Developer • Designer • Art Director</div>
 <div class="container">
   <div id="top-section">

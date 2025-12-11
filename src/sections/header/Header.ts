@@ -39,7 +39,7 @@ export default function header() {
   // Name
   const name = document.createElement('div');
   name.setAttribute('id', 'name');
-  name.innerHTML = /* html */ `Michael Kolesidi<span id="falling-letter">s</span>`;
+  name.innerHTML = /* html */ `Jhaden Christian Goy<span id="falling-letter"></span>`;
 
   document.addEventListener('DOMContentLoaded', () => {
     const fallingLetter = document.getElementById('falling-letter');
@@ -54,10 +54,10 @@ export default function header() {
   window.addEventListener('scroll', function () {
     if (window.scrollY >= 30) {
       name.classList.add('scrolled');
-      name.innerHTML = /* html */ `Michael Kolesidis`;
+      name.innerHTML = /* html */ `Jhaden Christian Goy`;
     } else {
       name.classList.remove('scrolled');
-      name.innerHTML = /* html */ `Michael Kolesidi<span id="falling-letter">s</span>`;
+      name.innerHTML = /* html */ `Jhaden Christian Goy<span id="falling-letter"></span>`;
 
       const fallingLetter = document.getElementById('falling-letter');
 
