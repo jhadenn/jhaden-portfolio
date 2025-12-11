@@ -1,10 +1,3 @@
-<div align="center">
-  <img src="./public/assets/attention-free-software-with-text.png">
-  <img src="./screenshots/main-windows-rearranged.png" width="800px">
-  <h4>My award-winning playground / portfolio website</h4>
-  <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
-</div>
-
 ## 🛠️ Technologies Used
 
 <a href="https://www.typescriptlang.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/typescript/typescript-original.svg" height="50px" /></a>
@@ -37,32 +30,6 @@ These aren’t just gimmicks. They’re carefully crafted microinteractions, whe
 ### Minimal Version
 
 Due to the website’s colorful design and animations, it may be challenging for users with disabilities to navigate. To improve accessibility, I’ve also created a minimal version, available via the footer link, which points to [michaelkolesidis.com/minimal](https://michaelkolesidis.com/minimal).
-
-## 🏆 Awards
-
-### ★ DESIGN AWARD
-
-**[One Page Love](https://onepagelove.com/michael-kolesidis)**
-
-_February 2023_
-
-Awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.
-
-### ★ STAR AWARD
-
-**[CSS Winner](https://www.csswinner.com/details/michael-kolesidis/16936)**
-
-_February 2023_
-
-Awarded by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.
-
-### ★ SITE OF THE DAY
-
-**[Best CSS](https://www.bestcss.in/user/detail/michaelkolesidiscom-34682)**
-
-_March 2023_
-
-Awarded by Best CSS, a web platform that discovers, recognizes and promotes the talent and effort of web designers, developers and agencies who create unique digital experiences that are useful, innovative, intuitive and beautiful.
 
 ## 📦 Dependencies
 
@@ -119,15 +86,7 @@ If you don’t, **analytics will be disabled**.
 | #ffffff | 255, 255, 255 |
 | #0a0a0a |  10, 10, 10   |
 
-## 📸 Screenshots
-
-![Screenshot](./screenshots/main-windows-rearranged.png)  
-![Screenshot](./screenshots/main.png)  
-![Screenshot](./screenshots/projects.png)  
-![Screenshot](./screenshots/awards.png)  
-![Screenshot](./screenshots/about.png)  
-![Screenshot](./screenshots/duck-cel-shading-outline.png)  
-The duck with cel shading and an outline.
+### Screenshots
 
 ### Cursors
 
@@ -143,23 +102,13 @@ A huge thanks to everyone who supported me, from friends and colleagues to anony
 
 Feel free to contact me for business inquiries, feedback, bug reports, or general comments.
 
-If you use my code or my graphics in your projects, I’d love to hear about it! Feel free to email me — I'm always excited (and curious) to see how it's being used! Remember to use my code in accordance with the terms of the respective license!
-
-## 💖 Support the Project
-
-Thank you for your interest in my project! If you'd like to go further and support my work, you can buy me a coffee:
-
-<a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## 📜 License
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="./public/assets/icons/agplv3.svg" height="80px" /></a>
-
-Copyright (c) Michael Kolesidis  
 The code is licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).  
 
 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./public/assets/icons/creative-commons.svg" height="80px" /></a>
 
-The graphics, images, and cursors, are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/), except for the duck logo.
+The graphics, images, and cursors, are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
-🏳️‍⚧️✊🏿🏳️‍🌈🦆
