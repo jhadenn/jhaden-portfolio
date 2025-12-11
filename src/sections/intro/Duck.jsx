@@ -21,7 +21,7 @@ import * as THREE from 'three';
 import variables from '../../style/variables.module.scss';
 
 export const Duck = forwardRef(({ onToggleLight, ...props }, ref) => {
-  const { nodes, materials } = useGLTF('/assets/3d-models/duck.glb');
+  const { nodes, materials } = useGLTF('/assets/3d-models/Computer Generic 2000s.glb');
   const duck = useRef();
   const [useToon, setUseToon] = useState(false);
   const [hovered, setHovered] = useState(false);
@@ -70,15 +70,19 @@ export const Duck = forwardRef(({ onToggleLight, ...props }, ref) => {
     return texture;
   }, []);
 
+   // Get first material for toon shader (using M_plastic_bone as default)
+   const firstMaterial = materials['M_plastic_bone'] || Object.values(materials)[0];
+
   const toonMaterial = useMemo(() => {
+    if (!firstMaterial) return null;
     return new THREE.MeshToonMaterial({
-      color: materials.Duck.color,
-      map: materials.Duck.map,
-      normalMap: materials.Duck.normalMap,
+      color: firstMaterial.color || 0xffffff,
+      map: firstMaterial.map || null,
+      normalMap: firstMaterial.normalMap || null,
       gradientMap,
       toneMapped: false,
     });
-  }, [materials.Duck, gradientMap]);
+  }, [firstMaterial, gradientMap]);
 
   const handleClick = (e) => {
     e.stopPropagation();
@@ -100,34 +104,39 @@ export const Duck = forwardRef(({ onToggleLight, ...props }, ref) => {
     window.dispatchEvent(new CustomEvent('duckClicked'));
   };
 
+  // Render all nodes from the model
   return (
-    <group {...props} ref={duck} dispose={null}>
-      <mesh
-        ref={ref}
-        name="duck"
-        geometry={nodes.Node1.geometry}
-        onClick={handleClick}
-        onPointerOver={(e) => {
-          e.stopPropagation();
-          setHovered(true);
-        }}
-        onPointerOut={(e) => {
-          e.stopPropagation();
-          setHovered(false);
-        }}
-        material={useToon ? toonMaterial : undefined}
-      >
-        {!useToon && (
-          <meshStandardMaterial
-            map={materials.Duck.map}
-            color={0xffffff}
-            toneMapped={false}
-          />
-        )}
-        {useToon && <Outlines thickness={1.5} color={0x000000} />}
-      </mesh>
+    <group {...props} ref={duck} dispose={null} onClick={handleClick}>
+      {Object.entries(nodes).map(([name, node]) => {
+        // Skip root/scene nodes that don't have geometry
+        if (!node.geometry || name === 'Root_Scene' || name === 'RootNode') {
+          return null;
+        }
+        
+        return (
+          <mesh
+            key={name}
+            ref={name === 'era_Gateway_2000_PC_from_1995' ? ref : undefined}
+            geometry={node.geometry}
+            position={node.position}
+            rotation={node.rotation}
+            scale={node.scale}
+            onPointerOver={(e) => {
+              e.stopPropagation();
+              setHovered(true);
+            }}
+            onPointerOut={(e) => {
+              e.stopPropagation();
+              setHovered(false);
+            }}
+            material={useToon && toonMaterial ? toonMaterial : node.material}
+          >
+            {useToon && <Outlines thickness={1.5} color={0x000000} />}
+          </mesh>
+        );
+      })}
     </group>
   );
 });
 
-useGLTF.preload('/assets/3d-models/duck.glb');
+useGLTF.preload('/assets/3d-models/Computer Generic 2000s.glb');

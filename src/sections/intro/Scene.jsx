@@ -29,9 +29,10 @@ export default function Scene() {
 
   function useDuckScale() {
     const [scale, setScale] = useState(getScale());
-
+    
+    // change the sizing of the 3d model. first value for larger screens, second for smaller screens
     function getScale() {
-      return window.innerWidth > 1001 ? 5.5 : 4.5;
+      return window.innerWidth > 1001 ? 46.5 : 30;
     }
 
     useEffect(() => {
