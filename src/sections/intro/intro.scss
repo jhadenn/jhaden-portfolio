@@ -4,7 +4,7 @@
 
 #intro {
   position: absolute;
-  top: 68vh;
+  top: 60vh;
   display: flex;
   justify-content: space-between;
   min-width: 98vw;
@@ -33,31 +33,32 @@
   }
 }
 
-#handwriting {
-  position: relative;
-  top: -38.1vh;
-  right: clamp(-100em, max(-42vh, -41vw), 9em);
+// COMPONENT NOT IN USE
+// #handwriting {
+//   position: relative;
+//   top: -38.1vh;
+//   right: clamp(-100em, max(-42vh, -41vw), 9em);
 
-  p {
-    font-family: 'Caveat', sans-serif;
-    font-size: clamp(1em, 3.5vh, 2em);
-    text-align: center;
-    white-space: nowrap;
-    line-height: 1em;
-    pointer-events: auto;
-    cursor: $pointer;
-    transform: rotate(20deg);
-    text-shadow: none;
-    font-weight: 400;
-    -webkit-text-stroke: 0;
-    color: $black;
-    background: $transparent;
-    border: none;
-    box-shadow: none;
-    opacity: 1;
-    transition: opacity 1s ease;
-  }
-}
+//   p {
+//     font-family: 'Caveat', sans-serif;
+//     font-size: clamp(1em, 3.5vh, 2em);
+//     text-align: center;
+//     white-space: nowrap;
+//     line-height: 1em;
+//     pointer-events: auto;
+//     cursor: $pointer;
+//     transform: rotate(20deg);
+//     text-shadow: none;
+//     font-weight: 400;
+//     -webkit-text-stroke: 0;
+//     color: $black;
+//     background: $transparent;
+//     border: none;
+//     box-shadow: none;
+//     opacity: 1;
+//     transition: opacity 1s ease;
+//   }
+// }
 
 #tv-window {
   left: 520px;
@@ -134,7 +135,7 @@
 
 #scroll-prompt {
   position: absolute;
-  bottom: 0;
+  bottom: -140px;
   white-space: nowrap;
   font-weight: 500;
   background-color: $white;

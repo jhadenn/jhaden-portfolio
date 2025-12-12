@@ -4,6 +4,7 @@
 
 #header {
   background-color: $white;
+  overflow: visible;
 }
 
 #name {
@@ -221,7 +222,8 @@
 
 #header-nav {
   position: absolute;
-  top: 58px;        // adjust as needed
+  top: 58px;
+  right: 20px;
   display: inline-flex;
   gap: 1.5rem;
   padding: 0.5em 0.75em;
@@ -232,10 +234,28 @@
   cursor: $grab;
   z-index: 4;
   white-space: nowrap;
+  width: auto;
+  max-width: fit-content;
+  min-width: fit-content;
   animation: appear 1s forwards;
   animation-delay: 0.5s;
-  opacity: 0;       // fades in
-  overflow: hidden;
+  opacity: 0;
+  transition: font-size 0.3s ease, top 0.3s ease, left 0.3s ease, padding 0.3s ease, gap 0.3s ease, mix-blend-mode 0.3s ease, color 0.3s ease, position 0s, background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#header-nav.scrolled {
+  position: fixed;          // Change to fixed like the name
+  font-size: 0.9em;
+  top: 10px;
+  right: auto;
+  mix-blend-mode: difference;
+  color: $white;
+  padding: 0.3em 0.5em;
+  gap: 1rem;
+  z-index: 4;
+  background-color: transparent; // Remove background for mix-blend-mode
+  border: none;                  // Remove border
+  box-shadow: none;              // Remove shadow
 }
 
 #header-nav a {

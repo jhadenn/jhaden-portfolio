@@ -105,7 +105,7 @@ Feel free to contact me for business inquiries, feedback, bug reports, or genera
 
 ## 📜 License
 
-Computer 90s by Charlie [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/Bw55oYsbp8)
+Computer Generic 2000s by Charlie [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/P90iu7e4gY)
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="./public/assets/icons/agplv3.svg" height="80px" /></a>
 The code is licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).  

@@ -625,20 +625,67 @@ export default function header() {
 
  header.appendChild(navigationBar);
 
- // Ensure positioning of the navbar
- // Position navbar after it's in the DOM (so we can measure it)
-requestAnimationFrame(() => {
+// Function to position navbar based on screen width and scroll state
+function positionNavbar() {
+  // Skip positioning on mobile - let CSS handle it
+  if (window.innerWidth <= 820) {
+    navigationBar.style.top = '';
+    navigationBar.style.left = '';
+    navigationBar.style.right = '';
+    return;
+  }
+
   const nameRect = name.getBoundingClientRect();
-  // Position it to the right of the name with some spacing
-  navigationBar.style.top = '58px';
-  navigationBar.style.left = `${nameRect.right + 85}px`; // 30px spacing from name
-  navigationBar.style.right = ''; // ensure right is unset so dragging uses left
+  const isScrolled = window.scrollY >= 30;
+  
+  if (isScrolled) {
+    // When scrolled, match name's scrolled position (small, top-left)
+    navigationBar.classList.add('scrolled');
+    navigationBar.style.top = '10px';
+    navigationBar.style.left = `${nameRect.right + 15}px`;
+    navigationBar.style.right = '';
+  } else {
+    // When at top, use normal positioning
+    navigationBar.classList.remove('scrolled');
+    
+    if (window.innerWidth < 1570) {
+      // Position below the name when screen is narrow
+      navigationBar.style.top = `${nameRect.bottom + 15}px`;
+      navigationBar.style.left = `${nameRect.left}px`;
+      navigationBar.style.right = '';
+    } else {
+      // Normal position when screen is wide enough
+      navigationBar.style.top = '58px';
+      navigationBar.style.right = '20px';
+      navigationBar.style.left = '';
+    }
+  }
+}
+
+// Initial positioning
+requestAnimationFrame(() => {
+  positionNavbar();
 });
- dragElement(navigationBar);
- navigationBar.style.zIndex = windowManager.base;
- navigationBar.addEventListener('mousedown', () => {
-navigationBar.style.zIndex = windowManager.moveOnTop();
- });
+
+dragElement(navigationBar);
+navigationBar.style.zIndex = windowManager.base;
+navigationBar.addEventListener('mousedown', () => {
+  navigationBar.style.zIndex = windowManager.moveOnTop();
+});
+
+// Reposition on window resize
+window.addEventListener('resize', () => {
+  if (navigationBar.parentElement) {
+    positionNavbar();
+  }
+});
+
+// Reposition on scroll (matches name behavior)
+window.addEventListener('scroll', () => {
+  if (navigationBar.parentElement) {
+    positionNavbar();
+  }
+});
 
   /*
   // Project Request
