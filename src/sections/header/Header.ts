@@ -645,16 +645,13 @@ function positionNavbar() {
     navigationBar.style.left = `${nameRect.right + 15}px`;
     navigationBar.style.right = '';
   } else {
-    // When at top, use normal positioning
     navigationBar.classList.remove('scrolled');
-    
+
     if (window.innerWidth < 1570) {
-      // Position below the name when screen is narrow
       navigationBar.style.top = `${nameRect.bottom + 15}px`;
       navigationBar.style.left = `${nameRect.left}px`;
       navigationBar.style.right = '';
     } else {
-      // Normal position when screen is wide enough
       navigationBar.style.top = '58px';
       navigationBar.style.right = '20px';
       navigationBar.style.left = '';
@@ -673,19 +670,16 @@ navigationBar.addEventListener('mousedown', () => {
   navigationBar.style.zIndex = windowManager.moveOnTop();
 });
 
-// Reposition on window resize
-window.addEventListener('resize', () => {
-  if (navigationBar.parentElement) {
-    positionNavbar();
-  }
-});
+function scheduleNavbarPosition() {
+  requestAnimationFrame(() => {
+    positionNavbar(); // after class toggle
+    setTimeout(positionNavbar, 180); // after name transition finishes
+  });
+}
 
-// Reposition on scroll (matches name behavior)
-window.addEventListener('scroll', () => {
-  if (navigationBar.parentElement) {
-    positionNavbar();
-  }
-});
+window.addEventListener('scroll', scheduleNavbarPosition);
+window.addEventListener('resize', scheduleNavbarPosition);
+
 
   /*
   // Project Request
