@@ -15,9 +15,9 @@ export const projectList: Project[] = [
     name: 'STOCK CATALOG',
     image: '../../images/okto-direct.png',
     technologies:
-      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
+      'React, Next.js, TypeScript, Supabase',
     summary:
-      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
+      'A comprehensive cataloging CRUD web application designed for an automotive retail store featuring a login system with secure access control.',
     description: '',
     repository: '',
     deployment: 'https://www.oktopayments.com/okto-direct/',
