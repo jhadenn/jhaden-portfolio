@@ -53,9 +53,13 @@
 }
 
 #welcome {
-  top: 11vh;
+  top: 15vh;
   left: 1vw;
+  img {
+    width: 300px;
+  }
 }
+
 
 #name {
   margin-top: 0.5vh;
@@ -76,17 +80,24 @@
   top: auto !important;
   left: auto !important;
   right: auto !important;
-  margin: 0.5vh auto 0 auto !important;  // Center with auto margins
-  display: inline-flex !important;  // Use inline-flex for tighter wrapping
+
+  display: flex !important;
   justify-content: center !important;
+
+  width: 100% !important;        /* take full row */
+  max-width: 100% !important;
+  margin: 0.5vh 0 0 0 !important;
+
   flex-wrap: wrap;
   gap: 0.4rem;
   padding: 0.25em 0.4em;
-  font-size: clamp(0.9em, 3vw, 1.1em);
-  width: fit-content !important;
-  max-width: 90vw;
   box-sizing: border-box;
-  text-align: center;  // Ensure text alignment
+  text-align: center;
+}
+
+#header-nav a {
+  font-size: clamp(0.85em, 2.5vw, 1em);
+  padding: 2px 5px;
 }
 
 #header-nav.scrolled {
@@ -94,7 +105,15 @@
   top: auto !important;
   left: auto !important;
   right: auto !important;
-  margin: 0.5vh auto 0 auto !important;  // Center
+
+  display: inline-flex !important;
+  width: fit-content !important;
+  max-width: 90vw;
+
+  margin: 0.5vh auto 0 auto !important;
+
+  justify-content: center !important;
+  flex-wrap: wrap;
   padding: 0.25em 0.4em;
   gap: 0.4rem;
 }
@@ -107,7 +126,7 @@
   /* Intro */
   #intro {
     p {
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
   }
 
@@ -177,7 +196,7 @@
 
   #japanese {
     position: absolute;
-    top: 12vh;
+    top: 15vh;
     right: 5vw;
     font-size: 1.6em;
   }

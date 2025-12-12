@@ -551,7 +551,7 @@ export default function header() {
   topGap.style.color = `white`;
   header.appendChild(topGap);
 
-  // Message Box
+  // Picture Box
   const messageBox = document.createElement('div');
   messageBox.setAttribute('id', 'box');
 

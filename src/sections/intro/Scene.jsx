@@ -32,7 +32,7 @@ export default function Scene() {
     
     // change the sizing of the 3d model. first value for larger screens, second for smaller screens
     function getScale() {
-      return window.innerWidth > 1001 ? 46.5 : 30;
+      return window.innerWidth > 1001 ? 46.5 : 35.5;
     }
 
     useEffect(() => {

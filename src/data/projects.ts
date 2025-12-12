@@ -12,7 +12,7 @@ export interface Project {
 
 export const projectList: Project[] = [
   {
-    name: 'OKTO.DIRECT',
+    name: 'STOCK CATALOG',
     image: '../../images/okto-direct.png',
     technologies:
       'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
