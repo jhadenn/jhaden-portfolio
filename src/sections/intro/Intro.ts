@@ -15,11 +15,11 @@ export default function intro() {
 
   intro.appendChild(whoami);
 
-  // // What Am I (paragraph on the right)
-  // const whatami = document.createElement('p');
-  // whatami.setAttribute('id', 'right');
-  // whatami.innerHTML = `${textsInto[1]}`;
-  // intro.appendChild(whatami);
+  // What Am I (paragraph on the right)
+   const whatami = document.createElement('p');
+   whatami.setAttribute('id', 'right');
+   whatami.innerHTML = `${textsInto[1]}`;
+   intro.appendChild(whatami);
   
 
   // Handwriting (Component not in use)
@@ -96,5 +96,5 @@ export default function intro() {
         scrollPrompt.hidden = true;
       }, 30000); 
     }
-  }, 4000); // how early scroll prompt flashes
+  }, 2000); // how early scroll prompt flashes
 }

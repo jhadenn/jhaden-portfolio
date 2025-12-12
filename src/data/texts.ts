@@ -1,7 +1,7 @@
 // Intro Section
 export const textsInto: string[] = [
-  `I'm Jhaden Christian Goy. A CS student at Ontario Tech University.`,
-  `I'm a designer and developer, focused on AI, machine learning, cloud systems, and full-stack development.`,
+  ``,
+  `Hi! I'm Jhaden. I'm a software developer. I'm in my third year studying Computer Science at Ontario Tech University.`,
   `When programmers try to find bugs, it helps to explain their code line-by-line to an inanimate object. This is known as rubber duck debugging.`,
 ];
 

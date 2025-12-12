@@ -4,7 +4,7 @@
 
 #intro {
   position: absolute;
-  top: 60vh;
+  top: 80vh;
   display: flex;
   justify-content: space-between;
   min-width: 98vw;
@@ -31,6 +31,8 @@
     min-width: 16ch;
     column-count: 2;
   }
+
+
 }
 
 // COMPONENT NOT IN USE
@@ -135,7 +137,7 @@
 
 #scroll-prompt {
   position: absolute;
-  bottom: -140px;
+  bottom: 15px;
   white-space: nowrap;
   font-weight: 500;
   background-color: $white;

@@ -24,7 +24,7 @@ export default function ticker() {
     window.innerWidth > 1000
       ? [
           'THIS IS MY PORTFOLIO',
-          'THIRD YEAR COMPUTER SCIENCE',
+          'WELCOME',
           'ONTARIO TECH UNIVERSITY',
           'TRY MOVING THINGS AROUND',
         ]
