@@ -54,7 +54,7 @@ export default function footer() {
   // Copyright
   const copyright = document.createElement('p');
   copyright.id = 'copyrigaht';
-  copyright.textContent = '© Michael Kolesidis';
+  copyright.textContent = '© Jhaden Goy';
   footer.appendChild(copyright);
 
   // Desktop prompt (mobile view)
@@ -69,7 +69,7 @@ export default function footer() {
   // Disclaimer
   const disclaimer = document.createElement('div');
   disclaimer.id = 'disclaimer';
-  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >AGPL-3.0-or-later</a></p><br><br><p>Designed and developed from the scratch, with no libraries, frameworks, or templates.</p>`;
+  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank"Designed >AGPL-3.0-or-later</a></p><br><br><p> and developed from the scratch, with no libraries, frameworks, or templates.</p>`;
   footer.appendChild(disclaimer);
 
   // Accessible
