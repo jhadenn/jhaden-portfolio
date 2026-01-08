@@ -2,13 +2,11 @@
 export const textsInto: string[] = [
   ``,
   `Hi! I'm Jhaden. I'm a software developer. I'm in my third year studying Computer Science at Ontario Tech University.`,
-  `When programmers try to find bugs, it helps to explain their code line-by-line to an inanimate object. This is known as rubber duck debugging.`,
 ];
 
 // Contact section
 export const textsContact: string[] = [
-  `Like what you see? I'm always open to take on new and exciting projects — let's discuss yours!`,
-  `If you have any questions, drop me a line at:<br>michael.kolesidis@gmail.com`,
+  `If you have any questions, drop me a line at:<br>jhadengoy@gmail.com`,
 ];
 
 // About section

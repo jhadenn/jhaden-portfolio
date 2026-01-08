@@ -1,3 +1,16 @@
 @import '../../style/style.scss';
 @import '../../style/variables.module.scss';
 @import '../../style/animations.scss';
+
+.award-certificate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .award-logo {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    display: block;
+  }

@@ -30,22 +30,22 @@ export default function contact() {
     .join('');
   contact.appendChild(contactTitle);
 
-  // Project Request paragraph
-  const projectRequestParagraph = document.createElement('p');
-  projectRequestParagraph.innerHTML = `${textsContact[0]}`;
-  contact.appendChild(projectRequestParagraph);
+  // // Project Request paragraph
+  // const projectRequestParagraph = document.createElement('p');
+  // projectRequestParagraph.innerHTML = `${textsContact[0]}`;
+  // contact.appendChild(projectRequestParagraph);
 
-  // Project Request button
-  const projectRequest = document.createElement('p');
-  projectRequest.id = 'project-request-contact';
-  projectRequest.classList.add('project-request');
-  projectRequest.innerHTML = `<a href="https://forms.gle/Vg7kH5PRosqU3HYx6" target="_blank">Submit Project Request</a>`;
-  contact.appendChild(projectRequest);
+  // // Project Request button
+  // const projectRequest = document.createElement('p');
+  // projectRequest.id = 'project-request-contact';
+  // projectRequest.classList.add('project-request');
+  // projectRequest.innerHTML = `<a href="" target="_blank">Submit Project Request</a>`;
+  // contact.appendChild(projectRequest);
 
   // Email
   const email = document.createElement('p');
   email.id = 'email';
-  email.innerHTML = `${textsContact[1]}`;
+  email.innerHTML = `${textsContact[0]}`;
   contact.appendChild(email);
 
   // Socials

@@ -27,7 +27,7 @@ export default function awards() {
   const awardsTitle = document.createElement('div');
   awardsTitle.id = 'awards-title';
   awardsTitle.classList.add('wavy');
-  awardsTitle.innerHTML = [...'AWARDS']
+  awardsTitle.innerHTML = [...'EXPERIENCE']
     .map((letter, i) => `<span style="--i:${6 - i}">${letter}</span> `)
     .join('');
   awards.appendChild(awardsTitle);
@@ -43,10 +43,19 @@ export default function awards() {
     const award = document.createElement('div');
     award.classList.add('award');
 
-    // Certificate
+    // Award Image
     const awardCertificate = document.createElement('div');
     awardCertificate.classList.add('award-certificate');
-    awardCertificate.innerHTML = `<img alt="award" src="../../assets/award.svg" alt="An award ribbon" />`;
+    // Build a safe URL that Vite understands
+    const logoUrl = new URL(`${awa.logo}`, import.meta.url).href;
+
+    awardCertificate.innerHTML = `
+    <img
+      class="award-logo"
+      src="${logoUrl}"
+      alt="${awa.title}"
+      />
+    `;
 
     award.appendChild(awardCertificate);
 

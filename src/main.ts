@@ -23,7 +23,7 @@ import projects from './sections/projects/Projects.js';
 import contact from './sections/contact/Contact.js';
 import about from './sections/about/About.js';
 import awards from './sections/awards/Awards.js';
-import thisWebsite from './sections/this-website/ThisWebsite.js';
+
 import footer from './sections/footer/Footer.js';
 import topButton from './components/buttons/TopButton.js';
 import {
@@ -39,10 +39,9 @@ ticker();
 header();
 intro();
 projects();
+awards();
 contact();
 about();
-awards();
-thisWebsite();
 footer();
 topButton();
 

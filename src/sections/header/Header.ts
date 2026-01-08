@@ -603,10 +603,9 @@ export default function header() {
 
  const navItems = [
   {label: 'Projects', target: '#projects'},
+  {label: 'Experience', target: '#awards'},
   {label: 'Contact', target: '#contact'},
   {label: 'About', target: '#about'},
-  {label: 'Awards', target: '#awards'},
-  {label: 'Gallery', target: '#this-website'},
  ]
 
  navItems.forEach(({ label, target }) => {
@@ -785,7 +784,7 @@ window.addEventListener('resize', scheduleNavbarPosition);
 
     window.addEventListener('resize', () => {
       duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
-      sunscreen.style.top = `${window.innerHeight + 50}px`;
+      //sunscreen.style.top = `${window.innerHeight + 50}px`;
       sticker.style.top = `${window.innerHeight + 50}px`;
 
       const canvas = document.querySelector('canvas');
@@ -810,30 +809,30 @@ window.addEventListener('resize', scheduleNavbarPosition);
     });
   }
 
-  // Sunscreen
-  const sunscreen = document.createElement('img');
-  sunscreen.setAttribute('src', 'assets/sunscreen.png');
-  sunscreen.setAttribute('id', 'sunscreen');
-  sunscreen.setAttribute('alt', 'A bottle of Hawaiian Tropic sunscreen');
-  sunscreen.style.top = `${window.innerHeight + 50}px`;
+  // // Sunscreen
+  // const sunscreen = document.createElement('img');
+  // sunscreen.setAttribute('src', 'assets/sunscreen.png');
+  // sunscreen.setAttribute('id', 'sunscreen');
+  // sunscreen.setAttribute('alt', 'A bottle of Hawaiian Tropic sunscreen');
+  // sunscreen.style.top = `${window.innerHeight + 50}px`;
 
-  dragElement(sunscreen);
-  sunscreen.style.zIndex = windowManager.base;
+  // dragElement(sunscreen);
+  // sunscreen.style.zIndex = windowManager.base;
 
-  sunscreen.addEventListener('mousedown', () => {
-    sunscreen.style.zIndex = windowManager.moveOnTop();
-  });
+  // sunscreen.addEventListener('mousedown', () => {
+  //   sunscreen.style.zIndex = windowManager.moveOnTop();
+  // });
 
-  sunscreen.addEventListener('click', () => {
-    sunscreen.classList.add('shake');
-    setTimeout(() => {
-      sunscreen.classList.remove('shake');
-    }, 500);
+  // sunscreen.addEventListener('click', () => {
+  //   sunscreen.classList.add('shake');
+  //   setTimeout(() => {
+  //     sunscreen.classList.remove('shake');
+  //   }, 500);
 
-    if (duckPlaceholder) {
-      duckPlaceholder.style.background = "url('../../assets/water.png')";
-    }
-  });
+  //   if (duckPlaceholder) {
+  //     duckPlaceholder.style.background = "url('../../assets/water.png')";
+  //   }
+  // });
 
-  header.appendChild(sunscreen);
+  // header.appendChild(sunscreen);
 }
