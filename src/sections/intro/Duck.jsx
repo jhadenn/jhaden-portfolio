@@ -71,18 +71,44 @@ export const Duck = forwardRef(({ onToggleLight, ...props }, ref) => {
   }, []);
 
    // Get first material for toon shader (using M_plastic_bone as default)
-   const firstMaterial = materials['M_plastic_bone'] || Object.values(materials)[0];
+  // Build toon materials per original material (keeps each mesh's own look)
+const toonMaterials = useMemo(() => {
+  const map = new Map();
 
-  const toonMaterial = useMemo(() => {
-    if (!firstMaterial) return null;
-    return new THREE.MeshToonMaterial({
-      color: firstMaterial.color || 0xffffff,
-      map: firstMaterial.map || null,
-      normalMap: firstMaterial.normalMap || null,
+  const makeToon = (mat) => {
+    if (!mat) return null;
+
+    // Reuse if already created for this material
+    if (map.has(mat.uuid)) return map.get(mat.uuid);
+
+    const toon = new THREE.MeshToonMaterial({
+      color: mat.color?.clone?.() ?? new THREE.Color(0xffffff),
+      map: mat.map ?? null,
       gradientMap,
-      toneMapped: false,
     });
-  }, [firstMaterial, gradientMap]);
+
+    // Keep transparency behavior consistent
+    toon.transparent = !!mat.transparent;
+    toon.opacity = mat.opacity ?? 1;
+
+    // If the original uses alpha test / cutout textures
+    toon.alphaTest = mat.alphaTest ?? 0;
+
+    // Helps avoid "too dark/too flat" depending on your lighting setup
+    toon.side = mat.side ?? THREE.FrontSide;
+
+    map.set(mat.uuid, toon);
+    return toon;
+  };
+
+  // Create toon version for every loaded material
+  for (const mat of Object.values(materials)) {
+    makeToon(mat);
+  }
+
+  return { get: makeToon, cache: map };
+}, [materials, gradientMap]);
+ 
 
   const handleClick = (e) => {
     e.stopPropagation();
@@ -129,7 +155,13 @@ export const Duck = forwardRef(({ onToggleLight, ...props }, ref) => {
               e.stopPropagation();
               setHovered(false);
             }}
-            material={useToon && toonMaterial ? toonMaterial : node.material}
+            material={
+  useToon
+    ? (Array.isArray(node.material)
+        ? node.material.map((m) => toonMaterials.get(m))
+        : toonMaterials.get(node.material))
+    : node.material
+}
           >
             {useToon && <Outlines thickness={1.5} color={0x000000} />}
           </mesh>

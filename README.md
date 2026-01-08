@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="./screenshots/portfolio-homepage.png" width="800px">
+  <h4>Main home page of my portfolio website</h4>
+</div>
+
 ## 🛠️ Technologies Used
 
 <a href="https://www.typescriptlang.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/typescript/typescript-original.svg" height="50px" /></a>
@@ -13,36 +18,17 @@ The website was handcrafted from scratch using TypeScript, GSAP, and Sass, with 
 
 ### Other Technologies
 
-I used a [WebGL](https://www.khronos.org/webgl/) shader to make a TV signal noise effect, and for the 3D rubber duck I used [three.js](https://threejs.org/), a library and API to use 3D computer graphics in the browser using WebGL. I used it via [React Three Fiber](https://r3f.docs.pmnd.rs/getting-started/introduction), a React renderer for three.js.
-
-## 💡 Concept
-
-When did the web become so serious?  
-
-My website is a love letter to the early Internet, a tribute to the era of naïve web art, romantic digital amateurs, and the beautiful chaos of GeoCities. I first discovered the magical world of the World Wide Web in the ’90s, and this project is my attempt to bottle some of that pixelated magic. Its visual language borrows from street art, print-era layout experimentation, and the punchy, graphic attitude of ’90s MTV.
-
-I call the resulting aesthetic frivobrutalism: a joyful clash of whimsy and rawness, where playful visuals meet the structural honesty of brutalist design.
-
-Visitors can interact freely, and nearly every element on the site feels intentional and alive (I hope 😛). Some elements are draggable and dynamically stack when clicked, and colorful elements respond to interaction. Clicking them cycles through a curated palette, adding a touch of spontaneity. The rubber duck follows the mouse and switches to a cel-shaded, outlined style when clicked.
-
-These aren’t just gimmicks. They’re carefully crafted microinteractions, where each hover, click, or drag triggers an animation, sound, or state change. The site becomes a playground, blurring the line between interface and artwork, inviting users to play, explore, and get lost. Just like we used to on the old web.
+ This website uses [WebGL](https://www.khronos.org/webgl/) shader to make a TV signal noise effect, and for the 3D computer [three.js](https://threejs.org/), a library and API to use 3D computer graphics in the browser using WebGL via [React Three Fiber](https://r3f.docs.pmnd.rs/getting-started/introduction), a React renderer for three.js.
 
 ### Minimal Version
 
-Due to the website’s colorful design and animations, it may be challenging for users with disabilities to navigate. To improve accessibility, I’ve also created a minimal version, available via the footer link, which points to [michaelkolesidis.com/minimal](https://michaelkolesidis.com/minimal).
+Due to the website’s colorful design and animations, it may be challenging for users with disabilities to navigate. To improve accessibility, I’ve also created a minimal version, available via the footer link, which points to (COMING SOON).
 
 ## 📦 Dependencies
 
 In addition to the tools and technologies mentioned above, this project integrates a custom npm module I created, which handles window layering (bringing windows to the front on click) and drag-and-drop functionality for window movement.
 
-- [DOM Window Manager](https://www.npmjs.com/package/dom-window-manager) (created by me)
-
-## 📈 Analytics Notice
-
-⚠️ This project now uses Google Analytics via the `VITE_GA_TRACKING_ID` environment variable.
-
-If you fork or deploy this project, **please set your own ID** in a `.env` file or your deployment platform (e.g., Vercel).  
-If you don’t, **analytics will be disabled**.
+- [DOM Window Manager](https://www.npmjs.com/package/dom-window-manager) (created by Michael Kolesidis)
 
 ## 💻 Software used
 
@@ -88,15 +74,17 @@ If you don’t, **analytics will be disabled**.
 
 ### Screenshots
 
+![Screenshot](./screenshots/portfolio-homepage.png) 
+![Screenshot](./screenshots/main-homepage.png)  
+![Screenshot](./screenshots/projects.png)  
+![Screenshot](./screenshots/experiences.png)  
+![Screenshot](./screenshots/about.png)  
+
 ### Cursors
 
 ![Cursor](./public/assets/cursors/cursor.png)  
 ![Cursor](./public/assets/cursors/pointer.png)  
 ![Cursor](./public/assets/cursors/grab.png)  
-
-## 🙏 Acknowledgements
-
-A huge thanks to everyone who supported me, from friends and colleagues to anonymous internet users, providing valuable feedback throughout the development process.
 
 ## ✉️ Contact
 
