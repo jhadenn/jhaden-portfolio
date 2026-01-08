@@ -9,28 +9,28 @@ export interface Color {
 // The color palette used throughout the website
 export const colors: Color[] = [
   {
-    name: `pink`,
-    hex: `#ff90e8`,
-    rgb: `255, 144, 232`,
+    name: `electric-pink`,
+    hex: `#FF8AD8`,
+    rgb: `255, 138, 216`,
   },
   {
-    name: `yellow`,
-    hex: `#ffc900`,
-    rgb: `255, 201, 0`,
+    name: `signal-yellow`,
+    hex: `#FFD23F`,
+    rgb: `255, 210, 63`,
   },
   {
-    name: `orange`,
-    hex: `#ff7051`,
-    rgb: `255, 112, 81`,
+    name: `coral-orange`,
+    hex: `#FF7A5C`,
+    rgb: `255, 122, 92`,
   },
   {
-    name: `green`,
-    hex: `#3ecfc1`,
-    rgb: `62, 207, 193`,
+    name: `mint-teal`,
+    hex: `#3ED6C2`,
+    rgb: `62, 214, 194`,
   },
   {
-    name: `purple`,
-    hex: `#90a8ed`,
-    rgb: `144, 168, 237`,
+    name: `soft-indigo`,
+    hex: `#8FA4FF`,
+    rgb: `143, 164, 255`,
   },
 ] as const satisfies Color[];

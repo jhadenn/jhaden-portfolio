@@ -11,35 +11,11 @@ export const textsContact: string[] = [
 
 // About section
 export const textsAbout: string[] = [
-  `I'm passionate about design and development, specializing in web design, web development, graphic design, print design, product design, branding, game development, motion graphics, and more.`,
+  `I'm passionate about software design and development, specializing in full-stack development, AI cloud solutions, and machine learning.`,
 
   ` I love creating immersive web experiences that stand out, leave a lasting impression, and push the boundaries of what's possible, helping shape the future of the web.`,
 
-  `As a web developer, I primarily work with React, Next.js, TypeScript, GSAP, Three.js, React Three Fiber, Zustand, Tailwind, Sass, Pixi.js, p5.js, alongside various other frameworks and libraries.`,
+  `I primarily work with React, Next.js, TypeScript, Tailwind, Sass, alongside various other frameworks and libraries.`,
 
-  `I am proficient in a wide range of tools, including Figma, Adobe Photoshop, Illustrator, Animate, After Effects, Premiere, Lightroom, DaVinci Resolve, Final Cut Pro, and Ableton Live.`,
-
-  ` I also work with free software alternatives like Inkscape, Krita, GIMP, and Blender. I'm passionate about free software. I enjoy using it and fully support its development and growth.`,
-
-  `My mantra is: always choose the right tool for the job and avoid over-engineering.`,
-
-  `I have lived, studied, and worked in Greece, Spain (Barcelona), and the UK (Brighton). I am fluent in Greek, English, and Spanish.`,
-
-  `I used to have a rubber duck on my desk, but now it shares space with a Maneki-neko, the iconic Japanese lucky cat figurine. Together, they bring a mix of fun and good fortune to my workspace!`,
-
-  `I don't drink coffee or tea. Well, maybe a cup of tea a few times a year, but that's about it.`,
-];
-
-// This Website section
-export const textsThisWebsite: string[] = [
-  `When did the web become so serious? This website is a love letter to the early Internet, a tribute to the era of naïve web art, romantic digital amateurs, and the beautiful chaos of GeoCities.`,
-  `I first discovered the magical world of the World Wide Web in the ’90s, and this project is my attempt to bottle some of that pixelated magic. Its visual language borrows from street art, print-era layout experimentation, and the punchy, graphic attitude of ’90s MTV.`,
-
-  `I call the resulting aesthetic <i>frivobrutalism</i>, a joyful clash of whimsy and rawness, where playful visuals meet the structural honesty of brutalist design.`,
-
-  `This website is free software (free as in freedom). The source code is released under the GNU Affero General Public License v3.0, and you can only use it in accordance with the license's terms and conditions.`,
-
-  ` <span class="highlight">If you use any part of its code, you  must make your entire project's source code publicly available under the same license. This applies whether you modify the code or use it as it is in your own project.</span> `,
-
-  `This ensures that all modifications and derivative works remain free software, so that everyone can benefit. If you are not willing to comply with these terms, you must refrain from using any part of this code.`,
+  `I love snowboarding, bouldering, playing the electric guitar and fixing up old cars!`,
 ];
