@@ -17,5 +17,5 @@ export const textsAbout: string[] = [
 
   `I primarily work with React, Next.js, TypeScript, Tailwind, Sass, alongside various other frameworks and libraries.`,
 
-  `I love snowboarding, bouldering, playing the electric guitar and fixing up old cars!`,
+  `I own three cats, I love snowboarding, bouldering, playing the electric guitar and fixing up old cars!`,
 ];
