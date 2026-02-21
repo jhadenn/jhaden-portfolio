@@ -19,7 +19,7 @@ export const projectList: Project[] = [
     summary:
       'A comprehensive cataloging CRUD web application designed for an automotive retail store featuring a login system with secure access control.',
     description: '',
-    repository: '',
+    repository: 'https://github.com/jhadenn/Automotive-Stock-Catalog',
     deployment: '',
     video: '',
     visible: true,
@@ -45,7 +45,7 @@ export const projectList: Project[] = [
     summary:
       'A real-time multiplayer word game where players compete to find words in a randomly generated letter grid. ',
     description: ``,
-    repository: '',
+    repository: 'https://github.com/jhadenn/WordDash',
     deployment: '',
     video: '',
     visible: true,
@@ -59,7 +59,7 @@ export const projectList: Project[] = [
       'AI-powered flashcard study tool that helps students learn and stay engaged with active recall.',
     description:
       '',
-    repository: '',
+    repository: 'https://github.com/jhadenn/StudyTok',
     deployment: '',
     video: '',
     visible: true,
@@ -98,7 +98,7 @@ export const projectList: Project[] = [
     summary:
       'A custom-built file sharing system that allows users to upload and download text files between a local client and a central server.',
     description: '',
-    repository: '',
+    repository: 'https://github.com/jhadenn/File-Sharing-System',
     deployment: '',
     video: '',
     visible: true,
@@ -110,7 +110,7 @@ export const projectList: Project[] = [
     technologies: 'Java, JUnit, Swing',
     summary: 'A spam detector using a unigram approach for filtering. It trains on a dataset of emails, categorizing them, then tests its accuracy.',
     description: '',
-    repository: '',
+    repository: 'https://github.com/jhadenn/Spam-Detector',
     deployment: '',
     video: '',
     visible: true,
