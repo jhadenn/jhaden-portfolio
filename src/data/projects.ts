@@ -66,6 +66,20 @@ export const projectList: Project[] = [
   },
 
   {
+    name: 'Memory Match',
+    image: '../../images/MemoryMatch.png',
+    technologies: 'HTML, CSS, JavaScript',
+    summary:
+      'A memory matching card game built with HTML, CSS, and JavaScript.',
+    description:
+      '',
+    repository: 'https://github.com/jhadenn/Memory-Match',
+    deployment: '',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'Graphing Calculator',
     image: '../../images/Graphing Calculator.png',
     technologies: 'Java, Swing',
