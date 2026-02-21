@@ -85,7 +85,7 @@ export const projectList: Project[] = [
     technologies: 'Java, Swing',
     summary: `A graphing calculator that allows users to plot functions, find roots, and more.`,
     description: '',
-    repository: '',
+    repository: 'https://github.com/jhadenn/w25-csci2020u-lab09-jhadenn',
     deployment: '',
     video: '',
     visible: true,
