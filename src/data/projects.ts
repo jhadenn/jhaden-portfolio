@@ -12,6 +12,19 @@ export interface Project {
 
 export const projectList: Project[] = [
   {
+    name: 'Marketly',
+    image: '../../images/Marketly-v1.png',
+    technologies:
+      'Next.js, FastAPI, Playwright, Supabase',
+    summary:
+      'Unified marketplace search engine that aggregates listings from multiple platforms into one streamlined interface. Search live results across sources, compare instantly, and save searches so you never miss a deal.',
+    description: '',
+    repository: 'https://github.com/jhadenn/Marketly',
+    deployment: 'https://marketly-jet.vercel.app/',
+    video: '',
+    visible: true,
+  },
+  {
     name: 'Stock Catalog',
     image: '../../images/AutoStockCatalog.png',
     technologies:
