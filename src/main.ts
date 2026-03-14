@@ -15,6 +15,7 @@
  */
 
 import './style/style.scss';
+import { inject } from '@vercel/analytics';
 import body from './sections/body/Body.js';
 import ticker from './components/ticker/Ticker.js';
 import header from './sections/header/Header.js';
@@ -32,6 +33,9 @@ import {
   // animateTitle,
   fancyConsoleLog,
 } from './utils/functions.js';
+
+// Initialize Vercel Analytics
+inject();
 
 // Components
 body();
