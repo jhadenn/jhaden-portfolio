@@ -60,12 +60,8 @@ In addition to the tools and technologies mentioned above, this project integrat
 
 ### Color Palette
 
-<img src="./other/color-palette.png" width="700px">
-
 | HEX     |      RGB      |
 | ------- | :-----------: |
-| #ff90e8 | 255, 144, 232 |
-| #ffc900 |  255, 201, 0  |
 | #ff7051 | 255, 112, 81  |
 | #3ecfc1 | 62, 207, 193  |
 | #90a8ed | 144, 168, 237 |

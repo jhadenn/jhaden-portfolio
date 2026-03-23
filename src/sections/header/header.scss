@@ -18,6 +18,12 @@
   transition: font-size 0.3s ease, top 0.3s ease, left 0.3s ease;
   font-weight: 600;
   letter-spacing: 1px;
+  cursor: $pointer;
+}
+
+#name:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 6px;
 }
 
 #falling-letter {
