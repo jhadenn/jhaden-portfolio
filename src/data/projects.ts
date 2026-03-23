@@ -12,6 +12,19 @@ export interface Project {
 
 export const projectList: Project[] = [
   {
+    name: 'Marketly',
+    image: '../../images/Marketly-v1.png',
+    technologies:
+      'Next.js, FastAPI, Playwright, Supabase',
+    summary:
+      'Unified marketplace search engine that aggregates listings from multiple platforms into one streamlined interface. Search live results across sources, compare instantly, and save searches so you never miss a deal.',
+    description: '',
+    repository: 'https://github.com/jhadenn/Marketly',
+    deployment: 'https://marketly-jet.vercel.app/',
+    video: '',
+    visible: true,
+  },
+  {
     name: 'Stock Catalog',
     image: '../../images/AutoStockCatalog.png',
     technologies:
@@ -20,7 +33,7 @@ export const projectList: Project[] = [
       'A comprehensive cataloging CRUD web application designed for an automotive retail store featuring a login system with secure access control.',
     description: '',
     repository: 'https://github.com/jhadenn/Automotive-Stock-Catalog',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/Automotive-Stock-Catalog',
     video: '',
     visible: true,
   },
@@ -33,7 +46,7 @@ export const projectList: Project[] = [
     description: ``,
     repository:
       'https://github.com/jhadenn/Used-Car-Market-Analysis',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/Used-Car-Market-Analysis',
     video: '',
     visible: true,
   },
@@ -46,7 +59,7 @@ export const projectList: Project[] = [
       'A real-time multiplayer word game where players compete to find words in a randomly generated letter grid. ',
     description: ``,
     repository: 'https://github.com/jhadenn/WordDash',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/WordDash',
     video: '',
     visible: true,
   },
@@ -60,7 +73,7 @@ export const projectList: Project[] = [
     description:
       '',
     repository: 'https://github.com/jhadenn/StudyTok',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/StudyTok',
     video: '',
     visible: true,
   },
@@ -88,7 +101,7 @@ export const projectList: Project[] = [
     description:
       '',
     repository: 'https://github.com/jhadenn/Memory-Match',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/Memory-Match',
     video: '',
     visible: true,
   },
@@ -100,7 +113,7 @@ export const projectList: Project[] = [
     summary: `A graphing calculator that allows users to plot functions, find roots, and more.`,
     description: '',
     repository: 'https://github.com/jhadenn/w25-csci2020u-lab09-jhadenn',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/w25-csci2020u-lab09-jhadenn',
     video: '',
     visible: true,
   },
@@ -113,7 +126,7 @@ export const projectList: Project[] = [
       'A custom-built file sharing system that allows users to upload and download text files between a local client and a central server.',
     description: '',
     repository: 'https://github.com/jhadenn/File-Sharing-System',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/File-Sharing-System',
     video: '',
     visible: true,
   },
@@ -125,7 +138,7 @@ export const projectList: Project[] = [
     summary: 'A spam detector using a unigram approach for filtering. It trains on a dataset of emails, categorizing them, then tests its accuracy.',
     description: '',
     repository: 'https://github.com/jhadenn/Spam-Detector',
-    deployment: '',
+    deployment: 'https://github.com/jhadenn/Spam-Detector',
     video: '',
     visible: true,
   },
