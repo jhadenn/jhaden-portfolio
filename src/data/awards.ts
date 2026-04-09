@@ -38,7 +38,7 @@ export const awardList: Award[] = [
     logo: '/assets/Hackhive.png',      
   },
   {
-    color: 3,
+    color: 2,
     title: `2024 HackHive`,
     link: `https://www.bestcss.in/user/detail/michaelkolesidiscom-34682`,
     awarder: `Participant`,

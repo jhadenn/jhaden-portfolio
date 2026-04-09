@@ -1,7 +1,5 @@
 Color Palette
 
-#ff90e8
-#ffc900
 #ff7051
 #3ecfc1
 #90a8ed 

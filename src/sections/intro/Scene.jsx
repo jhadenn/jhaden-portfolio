@@ -62,7 +62,7 @@ export default function Scene() {
       <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
       <hemisphereLight
         skyColor={'#ffffff'}
-        groundColor={'#ffc900'}
+        groundColor={'#ff7051'}
         intensity={3}
       />
 

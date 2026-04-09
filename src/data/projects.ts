@@ -105,6 +105,20 @@ export const projectList: Project[] = [
   },
 
   {
+      name: 'Gradebook Explorer',
+      image: '../../images/GradebookExplorer.png',
+    technologies: 'HTML, CSS, JavaScript',
+    summary:
+      'A Gradebook Explorer and Visualizer built with HTML, CSS, and JavaScript.',
+    description:
+      '',
+    repository: 'https://github.com/jhadenn/Gradebook-Explorer',
+    deployment: 'https://jhadenn.github.io/Gradebook-Explorer/src/pages/spreadsheet.html',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'Memory Match',
     image: '../../images/MemoryMatch.png',
     technologies: 'HTML, CSS, JavaScript',

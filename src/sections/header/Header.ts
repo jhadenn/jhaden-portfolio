@@ -39,7 +39,22 @@ export default function header() {
   // Name
   const name = document.createElement('div');
   name.setAttribute('id', 'name');
+  name.setAttribute('role', 'button');
+  name.setAttribute('tabindex', '0');
+  name.setAttribute('aria-label', 'Scroll to the top of the page');
   name.innerHTML = /* html */ `Jhaden Christian Goy<span id="falling-letter"></span>`;
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  name.addEventListener('click', scrollToTop);
+  name.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      scrollToTop();
+    }
+  });
 
   document.addEventListener('DOMContentLoaded', () => {
     const fallingLetter = document.getElementById('falling-letter');
@@ -162,7 +177,7 @@ export default function header() {
   appsWindow.appendChild(tvButton);
 
   tvButton.addEventListener('mouseover', () => {
-    appsWindow.style.background = colors[1]!.hex;
+    appsWindow.style.background = colors[1 % colors.length]!.hex;
   });
 
   tvButton.addEventListener('mouseout', () => {
@@ -191,7 +206,7 @@ export default function header() {
   appsWindow.appendChild(radioButton);
 
   radioButton.addEventListener('mouseover', () => {
-    appsWindow.style.background = colors[3]!.hex;
+    appsWindow.style.background = colors[2 % colors.length]!.hex;
   });
 
   radioButton.addEventListener('mouseout', () => {
@@ -220,7 +235,7 @@ export default function header() {
   appsWindow.appendChild(pixelButton);
 
   pixelButton.addEventListener('mouseover', () => {
-    appsWindow.style.background = colors[4]!.hex;
+    appsWindow.style.background = colors[0]!.hex;
   });
 
   pixelButton.addEventListener('mouseout', () => {
