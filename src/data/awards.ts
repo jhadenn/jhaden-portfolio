@@ -19,6 +19,15 @@ export const awardList: Award[] = [
     description: `Placed Top 9 out of 20 teams in an 8-day innovation challenge focused on solving real-world healthcare problems using AI and technology. Collaborated on designing an AI-powered scheduling system to reduce patient wait times, improve care experience, and lower administrative overhead for hospitals and clinics.`,
     logo: '/assets/Brilliant_Catalyst.jpg',   
   },
+    {
+    color: 0,
+    title: `Healing Filipino Hearts`,
+    link: `https://www.linkedin.com/feed/update/urn:li:activity:7291982288244871168/`,
+    awarder: `Volunteer Software Developer`,
+    awarderLink: ``,
+    description: `Volunteered as a software developer for the Healing Filipino Hearts non-profit organization, contributing to the development of their website and digital presence.`,
+    logo: '/images/HFH-logo.PNG',   
+  },
   {
     color: 1,
     title: `2025 HackHive`,

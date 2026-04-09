@@ -13,7 +13,7 @@ export interface Project {
 export const projectList: Project[] = [
   {
     name: 'Marketly',
-    image: '../../images/Marketly-v1.png',
+    image: '../../images/Marketly.png',
     technologies:
       'Next.js, FastAPI, Playwright, Supabase',
     summary:
@@ -21,6 +21,19 @@ export const projectList: Project[] = [
     description: '',
     repository: 'https://github.com/jhadenn/Marketly',
     deployment: 'https://marketly-jet.vercel.app/',
+    video: '',
+    visible: true,
+  },
+  {
+    name: 'TripSmith AI',
+    image: '../../images/TRIPSMITH.png',
+    technologies:
+      'Python, OpenAI, ChromaDB, Gradio',
+    summary:
+      'An AI-powered travel planning assistant combining real-time weather support, destination Q&A, and personalized itinerary generation to create the perfect trip for any traveler.',
+    description: '',
+    repository: 'https://github.com/jhadenn/deploying-ai/tree/assignment-2',
+    deployment: 'https://github.com/jhadenn/deploying-ai/tree/assignment-2',
     video: '',
     visible: true,
   },
@@ -34,6 +47,19 @@ export const projectList: Project[] = [
     description: '',
     repository: 'https://github.com/jhadenn/Automotive-Stock-Catalog',
     deployment: 'https://github.com/jhadenn/Automotive-Stock-Catalog',
+    video: '',
+    visible: true,
+  },
+    {
+    name: 'Healing Filipino Hearts',
+    image: '../../images/HFH-logo.PNG',
+    technologies:
+      'TypeScript, Tailwind CSS, Vite, Vercel',
+    summary:
+      'Website for Filipino community heart health awareness non-profit organization!',
+    description: '',
+    repository: 'https://github.com/jhadenn/Healing-Filipino-Hearts',
+    deployment: 'https://healingfilipinohearts.org/',
     video: '',
     visible: true,
   },

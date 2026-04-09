@@ -1,7 +1,7 @@
 // Intro Section
 export const textsInto: string[] = [
   ``,
-  `Hi! I'm Jhaden. I'm a software developer. I'm in my third year studying Computer Science at Ontario Tech University.`,
+  `Hi! I'm Jhaden. I'm in my third year studying Computer Science at Ontario Tech University.`,
 ];
 
 // Contact section
