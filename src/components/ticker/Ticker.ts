@@ -23,11 +23,35 @@ export default function ticker() {
   const messages =
     window.innerWidth > 1000
       ? [
-          'THIS IS MY PORTFOLIO',
-          'WELCOME',
-          'ONTARIO TECH UNIVERSITY',
-          'TRY MOVING THINGS AROUND',
-        ]
+  'PYTHON',
+  'JAVA',
+  'TYPESCRIPT',
+  'HTML',
+  'CSS',
+  'C++',
+  'C',
+  'SQL',
+  'REACT',
+  'NODE.JS',
+  'EXPRESS',
+  'FASTAPI',
+  'PYDANTIC',
+  'FLASK',
+  'JUNIT',
+  'CHROMADB',
+  'GIT',
+  'DOCKER',
+  'AGILE/SDLC',
+  'GCP',
+  'VERCEL',
+  'PLAYWRIGHT',
+  'PANDAS',
+  'NUMPY',
+  'MATPLOTLIB',
+  'OPENAI',
+  'LANGCHAIN',
+  'HUGGINGFACE',
+]
       : ['VISIT THE DESKTOP VERSION FOR THE FULL EXPERIENCE', '•'];
 
   // Create elements

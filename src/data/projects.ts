@@ -24,6 +24,19 @@ export const projectList: Project[] = [
     video: '',
     visible: true,
   },
+   {
+    name: 'CineMatch',
+    image: '../../images/CineMatch.png',
+    technologies:
+      'Vue, Node.js, Express, SQLite, OpenAI',
+    summary:
+      'AI-powered movie exploration & recommendation platform that provides personalized movie suggestions based on user preferences and viewing history.',
+    description: '',
+    repository: 'https://github.com/jhadenn/CineMatch',
+    deployment: 'https://github.com/jhadenn/CineMatch',
+    video: 'https://youtu.be/OeO2F6AbxuE',
+    visible: true,
+  },
   {
     name: 'TripSmith AI',
     image: '../../images/TRIPSMITH.png',
