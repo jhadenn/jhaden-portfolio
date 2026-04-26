@@ -48,6 +48,14 @@ export default function contact() {
   email.innerHTML = `${textsContact[0]}`;
   contact.appendChild(email);
 
+  // Send Email button (mailto)
+  const emailButton = document.createElement('a');
+  emailButton.id = 'email-button';
+  emailButton.href = 'mailto:jhadengoy@gmail.com';
+  emailButton.textContent = 'Send Email';
+  emailButton.setAttribute('aria-label', 'Send an email to jhadengoy@gmail.com');
+  contact.appendChild(emailButton);
+
   // Socials
   const socials = document.createElement('div');
   socials.id = 'socials';
