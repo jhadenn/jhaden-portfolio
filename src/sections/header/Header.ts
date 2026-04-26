@@ -646,6 +646,9 @@ function positionNavbar() {
     navigationBar.style.top = '';
     navigationBar.style.left = '';
     navigationBar.style.right = '';
+    navigationBar.style.bottom = '';
+    navigationBar.style.position = '';
+    navigationBar.style.transform = '';
     return;
   }
 
