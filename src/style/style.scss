@@ -49,10 +49,19 @@ html {
   cursor: $cursor;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  max-width: 100%;
+}
+
+@supports (overflow: clip) {
+  body,
+  html {
+    overflow-x: clip;
+  }
 }
 
 body {
   border-right: $border;
+  min-width: 0;
 }
 
 a {

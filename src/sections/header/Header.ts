@@ -92,7 +92,9 @@ export default function header() {
   smiley.innerHTML = `<img alt="Smiley" src="../../assets/smiley-melting.svg" />`;
   header.appendChild(smiley);
 
-  smiley.addEventListener('click', () => {
+  const mobileStickerQuery = window.matchMedia('(max-width: 820px)');
+
+  const handleSmileyClick = () => {
     smiley.classList.add('move-left');
     setTimeout(() => {
       smiley.classList.remove('move-left');
@@ -109,7 +111,19 @@ export default function header() {
       appsWindow.style.opacity = '100';
       appsWindow.style.pointerEvents = 'all';
     }, 0);
-  });
+  };
+
+  const updateSmileyInteractivity = () => {
+    if (mobileStickerQuery.matches) {
+      smiley.removeEventListener('click', handleSmileyClick);
+      return;
+    }
+
+    smiley.addEventListener('click', handleSmileyClick);
+  };
+
+  updateSmileyInteractivity();
+  mobileStickerQuery.addEventListener('change', updateSmileyInteractivity);
 
   // Apps window
   const appsWindow = document.createElement('div');

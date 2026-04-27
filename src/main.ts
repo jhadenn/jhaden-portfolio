@@ -28,6 +28,7 @@ import footer from './sections/footer/Footer.js';
 import topButton from './components/buttons/TopButton.js';
 import {
   getScrollDistanceCss,
+  lockMobileHorizontalScroll,
   disableRightClick,
   // animateTitle,
   fancyConsoleLog,
@@ -48,6 +49,7 @@ topButton();
 // Global Functions
 disableRightClick(); // Disable right click
 getScrollDistanceCss(); // Get scroll distance as a CSS variable
+lockMobileHorizontalScroll(); // Prevent mobile horizontal panning into blank space
 // animateTitle(); // Animate page title, disabled for better analytics
 fancyConsoleLog(); // Fancy console log
 

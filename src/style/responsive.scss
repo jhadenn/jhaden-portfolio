@@ -17,22 +17,31 @@
   /* General Body and Main */
   html,
   body {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     border-right: none !important;
+    overscroll-behavior-x: none;
+    touch-action: pan-y;
+  }
+
+  @supports (overflow: clip) {
+    html,
+    body {
+      overflow-x: clip;
+    }
   }
 
   main,
   #main {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
   }
 
   #header {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     overflow: visible;
   }
 
@@ -47,20 +56,35 @@
     display: none;
   }
 
+  .window {
+    display: none !important;
+  }
+
   /* Decorative draggable elements - sized + positioned for the mobile hero.
      Mirrors the desktop layout: welcome top-left, box top-right, japanese
      right-edge below box, art mid-left, smiley bottom-left. */
   #smiley {
     position: absolute;
     left: 4vw;
-    bottom: 14vh;
+    bottom: 25vh;
+    width: auto;
+    height: auto;
+    display: block;
+    cursor: default;
     z-index: 4;
     /* Override the desktop moveSmiley keyframe (animates to bottom: 200px which is wrong on mobile) */
     animation: levitate 2s ease-in-out infinite !important;
 
     img {
-      width: 64px;
+      position: static;
+      width: 58px;
+      cursor: default;
+      transition: none;
     }
+  }
+
+  #smiley.move-left img {
+    animation: none !important;
   }
 
   #rays {
@@ -116,9 +140,9 @@
   /* #new now lives inside the projects section, not the hero. Override the
      desktop size and pin it to the top-right of the projects section. */
   #new {
-    top: 12px !important;
+    top: 14px !important;
     right: 22px !important;
-    transform: rotateZ(-12deg);
+    --new-sticker-angle: -12deg;
 
     img {
       width: clamp(68px, 19vw, 86px) !important;
@@ -150,14 +174,14 @@
 }
 
 
-#name {
+  #name {
   margin-top: 0.5vh;
   position: static;
   text-align: center;
   white-space: normal;
   word-break: break-word;
   padding: 0 8px;
-  max-width: 100vw;
+  max-width: 100%;
   font-size: clamp(18px, 7.5vw, 34px);
   line-height: 1.05;
 
@@ -232,8 +256,8 @@
     left: 0;
     right: 0;
     min-width: 0;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     padding: 0 12px;
     box-sizing: border-box;
     justify-content: center;
@@ -280,7 +304,7 @@
   #main-content > .section,
   #footer {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
   }
 

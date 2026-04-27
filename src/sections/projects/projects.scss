@@ -5,18 +5,23 @@
 #projects {
   position: relative;
   overflow: visible;
-  padding-top: 24px;
+  padding-top: 36px;
 }
 
 #new {
+  --new-sticker-angle: -10deg;
+  --new-sticker-spin: 0deg;
+
   position: absolute;
-  top: 18px;
+  top: -52px;
   right: clamp(24px, 6vw, 72px);
   cursor: $grab;
-  transform: rotateZ(-10deg);
+  transform: rotate(calc(var(--new-sticker-angle) + var(--new-sticker-spin)));
+  transform-origin: center;
   padding: 0;
   border-radius: 100px;
   z-index: 5;
+  will-change: transform;
 
   img {
     border-radius: 100px;
@@ -163,14 +168,14 @@
 
 @media only screen and (max-width: 820px) {
   #projects {
-    padding-top: 18px;
+    padding-top: 54px;
     overflow: visible;
   }
 
   #new {
-    top: 12px !important;
+    top: 14px !important;
     right: 22px !important;
-    transform: rotateZ(-12deg);
+    --new-sticker-angle: -12deg;
 
     img {
       width: clamp(68px, 19vw, 86px) !important;

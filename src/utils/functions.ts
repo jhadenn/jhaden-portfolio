@@ -48,6 +48,44 @@ export const getScrollDistanceCss = (): void => {
   });
 };
 
+export const lockMobileHorizontalScroll = (): void => {
+  const mobileViewport = window.matchMedia('(max-width: 820px)');
+  let animationFrame = 0;
+
+  const lockScrollLeft = () => {
+    if (!mobileViewport.matches || animationFrame !== 0) return;
+
+    animationFrame = window.requestAnimationFrame(() => {
+      animationFrame = 0;
+      const scrollingElement = document.scrollingElement;
+
+      if (window.scrollX !== 0) {
+        window.scrollTo(0, window.scrollY);
+      }
+
+      if (document.body.scrollLeft !== 0) {
+        document.body.scrollLeft = 0;
+      }
+
+      if (document.documentElement.scrollLeft !== 0) {
+        document.documentElement.scrollLeft = 0;
+      }
+
+      if (scrollingElement && scrollingElement.scrollLeft !== 0) {
+        scrollingElement.scrollTo({
+          left: 0,
+          top: scrollingElement.scrollTop,
+        });
+      }
+    });
+  };
+
+  window.addEventListener('scroll', lockScrollLeft, { passive: true });
+  window.addEventListener('resize', lockScrollLeft);
+  mobileViewport.addEventListener('change', lockScrollLeft);
+  lockScrollLeft();
+};
+
 export const disableRightClick = (): void => {
   document.addEventListener('contextmenu', (e) => e.preventDefault());
 };

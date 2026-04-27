@@ -22,6 +22,31 @@ export default function projects() {
     sticker.style.zIndex = stickerWindowManager.moveOnTop();
   });
 
+  let stickerSpinFrame = 0;
+
+  const updateStickerSpin = () => {
+    stickerSpinFrame = 0;
+
+    const scrollRange =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrollProgress = scrollRange > 0 ? window.scrollY / scrollRange : 0;
+
+    sticker.style.setProperty(
+      '--new-sticker-spin',
+      `${scrollProgress * 1440}deg`
+    );
+  };
+
+  const scheduleStickerSpin = () => {
+    if (stickerSpinFrame !== 0) return;
+
+    stickerSpinFrame = window.requestAnimationFrame(updateStickerSpin);
+  };
+
+  scheduleStickerSpin();
+  window.addEventListener('scroll', scheduleStickerSpin, { passive: true });
+  window.addEventListener('resize', scheduleStickerSpin);
+
   // Title
   const projectsTitle = document.createElement('div');
   projectsTitle.classList.add('wavy');
