@@ -1,7 +1,9 @@
+import { colors } from '../../data/colors.js';
+
 export function startGame() {
   // Constants
   const GRID_SIZE = { width: 12, height: 13 };
-  const COLORS = ['#ff7051', '#3ecfc1', '#90a8ed'];
+  const COLORS = colors.map((color) => color.hex);
   const MAX_MOVES = 20;
   const TEXTS = {
     LOSS_MESSAGE: 'Game over! Out of moves.',

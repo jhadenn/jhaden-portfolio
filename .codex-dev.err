@@ -1,0 +1,439 @@
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │ @import './responsive.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 29:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/style.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\intro\intro.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\intro\intro.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../../style/animations.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\intro\intro.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/style.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\footer\footer.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\footer\footer.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/style.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\components\ticker\ticker.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\components\ticker\ticker.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/style.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\components\buttons\buttons.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\components\buttons\buttons.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/style.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\projects\projects.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\projects\projects.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../../style/animations.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\projects\projects.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/style.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\awards\awards.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\awards\awards.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../../style/animations.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\awards\awards.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/style.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\header\header.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../../style/animations.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\header\header.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\header\header.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../../style/variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\sections\header\pixelated.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9            @import
+    src\sections\footer\footer.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9            @import
+    src\sections\footer\footer.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │ @import './responsive.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 29:9            @import
+    src\sections\footer\footer.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9          @import
+    src\sections\intro\intro.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9          @import
+    src\sections\intro\intro.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9              @import
+    src\components\ticker\ticker.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9              @import
+    src\components\ticker\ticker.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │ @import './responsive.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 29:9              @import
+    src\components\ticker\ticker.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9                @import
+    src\components\buttons\buttons.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9                @import
+    src\components\buttons\buttons.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │ @import './responsive.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 29:9                @import
+    src\components\buttons\buttons.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9                @import
+    src\sections\projects\projects.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9                @import
+    src\sections\projects\projects.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9            @import
+    src\sections\awards\awards.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9            @import
+    src\sections\awards\awards.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+27 │ @import './variables.module.scss';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 27:9            @import
+    src\sections\header\header.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+28 │ @import './animations.scss';
+   │         ^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\style\style.scss 28:9            @import
+    src\sections\header\header.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './variables.module.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\style\responsive.scss 1:9  @import
+    src\style\style.scss 29:9      root stylesheet
+
+WARNING: 1 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+WARNING: 1 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+WARNING: 1 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+WARNING: 2 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+WARNING: 2 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+WARNING: 2 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+WARNING: 2 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+

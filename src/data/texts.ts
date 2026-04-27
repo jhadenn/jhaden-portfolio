@@ -11,11 +11,11 @@ export const textsContact: string[] = [
 
 // About section
 export const textsAbout: string[] = [
-  `I'm passionate about software design and development, specializing in full-stack development, AI cloud solutions, and machine learning.`,
+  `I'm passionate about AI engineering, especially building intelligent systems and agents that simplify complex workflows.`,
 
   ` I love creating immersive web experiences that stand out, leave a lasting impression, and push the boundaries of what's possible, helping shape the future of the web.`,
 
-  `I primarily work with React, Next.js, TypeScript, Tailwind, Sass, alongside various other frameworks and libraries.`,
+  `My primary languages are Python and JavaScript alongside various other frameworks and libraries.`,
 
   `I own three cats, I love snowboarding, bouldering, playing the electric guitar and fixing up old cars!`,
 ];

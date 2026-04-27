@@ -18,6 +18,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Float } from '@react-three/drei';
 import { Duck } from './Duck';
+import { colors } from '../../data/colors.js';
 
 export default function Scene() {
   const duck = useRef();
@@ -62,7 +63,7 @@ export default function Scene() {
       <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
       <hemisphereLight
         skyColor={'#ffffff'}
-        groundColor={'#ff7051'}
+        groundColor={colors[1].hex}
         intensity={3}
       />
 
