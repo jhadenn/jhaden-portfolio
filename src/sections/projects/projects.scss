@@ -4,12 +4,14 @@
 
 #projects {
   position: relative;
+  overflow: visible;
+  padding-top: 24px;
 }
 
 #new {
   position: absolute;
-  top: -40px;
-  right: 30px;
+  top: 18px;
+  right: clamp(24px, 6vw, 72px);
   cursor: $grab;
   transform: rotateZ(-10deg);
   padding: 0;
@@ -18,10 +20,8 @@
 
   img {
     border-radius: 100px;
-    margin-bottom: -0.5em;
-    animation: rotate 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
+    display: block;
+    margin: 0;
     width: 190px;
   }
 }
@@ -159,4 +159,21 @@
   font-weight: 400;
   white-space: nowrap;
   width: 100%;
+}
+
+@media only screen and (max-width: 820px) {
+  #projects {
+    padding-top: 18px;
+    overflow: visible;
+  }
+
+  #new {
+    top: 12px !important;
+    right: 22px !important;
+    transform: rotateZ(-12deg);
+
+    img {
+      width: clamp(68px, 19vw, 86px) !important;
+    }
+  }
 }

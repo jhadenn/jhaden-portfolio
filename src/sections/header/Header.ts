@@ -777,7 +777,19 @@ window.addEventListener('resize', scheduleNavbarPosition);
   const duckPlaceholder = document.getElementById('duck-placeholder');
 
   if (duckPlaceholder) {
+    const updateHeroTop = () => {
+      const heroTop =
+        duckPlaceholder.getBoundingClientRect().top + window.scrollY;
+      document.documentElement.style.setProperty(
+        '--hero-top',
+        `${Math.round(heroTop)}px`
+      );
+    };
+
     duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
+    updateHeroTop();
+    requestAnimationFrame(updateHeroTop);
+    window.addEventListener('load', updateHeroTop);
 
     let duckClicked = false;
 
@@ -786,6 +798,7 @@ window.addEventListener('resize', scheduleNavbarPosition);
     });
 
     window.addEventListener('resize', () => {
+      updateHeroTop();
       duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
       //sunscreen.style.top = `${window.innerHeight + 50}px`;
 
