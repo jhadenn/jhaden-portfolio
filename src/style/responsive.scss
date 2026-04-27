@@ -47,7 +47,9 @@
     display: none;
   }
 
-  /* Decorative draggable elements - sized + positioned for the mobile hero */
+  /* Decorative draggable elements - sized + positioned for the mobile hero.
+     Mirrors the desktop layout: welcome top-left, box top-right, japanese
+     right-edge below box, art mid-left, smiley bottom-left. */
   #smiley {
     position: absolute;
     left: 4vw;
@@ -57,64 +59,57 @@
     animation: levitate 2s ease-in-out infinite !important;
 
     img {
-      width: 70px;
+      width: 64px;
     }
   }
 
+  /* Welcome svg already includes a sunburst, so the separate rays disc is
+     redundant on mobile and just causes overlap. Hide it. */
   #rays {
-    top: 11vh;
-    left: 0;
-    width: 90px;
-    max-height: 90px;
-    border-radius: 90px;
-
-    img {
-      width: 90px;
-      border-radius: 90px;
-    }
+    display: none;
   }
 
   #box {
     position: absolute;
-    top: 22vh;
-    right: 4vw;
-    width: 90px;
-    height: 90px;
-    padding: 6px;
+    top: 20vh;
+    right: 3vw;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
 
     button {
-      top: 4px;
-      right: 4px;
-      height: 22px;
-      width: 24px;
-      font-size: 0.85rem;
-      line-height: 22px;
+      top: 3px;
+      right: 3px;
+      height: 20px;
+      width: 22px;
+      font-size: 0.8rem;
+      line-height: 20px;
     }
   }
 
   #art {
     top: auto;
-    bottom: 16vh;
-    right: 4vw;
+    bottom: 22vh;
+    right: 3vw;
     left: auto;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
 
     img {
-      width: 75px;
-      height: 75px;
+      width: 65px;
+      height: 65px;
     }
   }
 
+  /* #new now lives inside the projects section, not the hero. Override the
+     desktop size and pin it to the top-right of the projects section. */
   #new {
-    position: absolute;
-    top: 36vh !important;
-    left: auto;
-    right: 6vw;
+    top: -28px;
+    right: 14px;
     transform: rotateZ(-12deg);
 
     img {
-      width: 80px;
+      width: 76px;
     }
   }
 
@@ -131,11 +126,11 @@
 }
 
 #welcome {
-  top: 12vh;
+  top: 11vh;
   left: 2vw;
   img {
-    width: 38vw;
-    max-width: 180px;
+    width: 34vw;
+    max-width: 150px;
     height: auto;
   }
 }
@@ -256,9 +251,23 @@
 
   /* Sections */
   .wavy {
+    max-width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+
     span {
-      font-size: 10vw;
+      font-size: 8vw;
     }
+  }
+
+  /* Lock every top-level section to the viewport width so no descendant can
+     create a horizontal scroll area (the "swipe right -> blank white" bug). */
+  #main-content,
+  #main-content > .section,
+  #footer {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   /* Projects */
@@ -343,39 +352,43 @@
     box-sizing: border-box;
   }
 
-  /* Experience (Awards section visible on mobile) */
+  /* Experience (Awards section visible on mobile). Each award is a
+     centered, shrunk card so titles + descriptions never get pushed
+     to the viewport edges. */
   #awards {
     display: flex;
-    padding: 0 12px;
+    padding: 0 16px;
   }
 
   #awards-container {
     width: 100%;
+    align-items: center;
   }
 
   .award {
     flex-direction: row;
     align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 3em;
+    gap: 12px;
+    margin: 0 auto 3em auto;
     width: 100%;
+    max-width: 360px;
   }
 
   .award-certificate {
     display: flex;
     margin: 0;
-    padding: 8px 6px;
+    padding: 6px;
     flex: 0 0 auto;
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     align-items: center;
     justify-content: center;
 
     img {
       width: 100%;
       height: 100%;
-      max-width: 64px;
-      max-height: 64px;
+      max-width: 52px;
+      max-height: 52px;
       object-fit: contain;
     }
   }
@@ -393,27 +406,30 @@
   }
 
   .award-title {
-    font-size: clamp(0.95rem, 4vw, 1.15rem);
+    font-size: clamp(0.9rem, 3.6vw, 1.05rem);
     width: auto;
     max-width: 100%;
-    line-height: 1.15;
+    line-height: 1.2;
     display: block;
     overflow-wrap: break-word;
     word-break: normal;
   }
 
   .award-awarder {
-    font-size: clamp(0.8rem, 3.4vw, 1rem);
-    line-height: 1.15;
+    font-size: clamp(0.78rem, 3.1vw, 0.95rem);
+    line-height: 1.2;
     display: block;
     max-width: 100%;
     overflow-wrap: break-word;
   }
 
-  /* Disable per-char inline-block layout on mobile so titles wrap by word, not by character */
+  /* Per-character spans (used for the desktop hover swing effect) cause the
+     browser to break lines mid-word on mobile because each char-span is its
+     own inline element. display: contents drops the spans from layout, so
+     the title text wraps at normal word boundaries. */
   .award-title > span,
   .award-awarder > span {
-    display: inline;
+    display: contents;
     white-space: normal;
     letter-spacing: 0;
   }
@@ -503,7 +519,7 @@
 
   #japanese {
     position: absolute;
-    top: 12vh;
+    top: 32vh;
     right: 3vw;
     font-size: 0.9em;
     padding: 0.2em 0.05em;

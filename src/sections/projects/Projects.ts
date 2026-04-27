@@ -2,10 +2,25 @@ import './projects.scss';
 import projectList from '../../data/projects.js';
 import { populateProjects } from '../../utils/populateProjects.js';
 import { gsap } from 'gsap';
+import { WindowManager, dragElement } from 'dom-window-manager';
+
+const stickerWindowManager = new WindowManager(1);
 
 export default function projects() {
   const projects = document.getElementById('projects');
   if (!projects) return;
+
+  // "New!" sticker - sits at the top-right of the projects section
+  const sticker = document.createElement('div');
+  sticker.setAttribute('id', 'new');
+  sticker.innerHTML = `<img alt="New! sticker" src="../../assets/new.svg" />`;
+  projects.appendChild(sticker);
+
+  dragElement(sticker);
+  sticker.style.zIndex = stickerWindowManager.base;
+  sticker.addEventListener('mousedown', () => {
+    sticker.style.zIndex = stickerWindowManager.moveOnTop();
+  });
 
   // Title
   const projectsTitle = document.createElement('div');

@@ -597,21 +597,6 @@ export default function header() {
   messageBox.appendChild(closeButton);
   header.appendChild(messageBox);
 
-  // Sticker
-  const sticker = document.createElement('div');
-  sticker.setAttribute('id', 'new');
-  sticker.innerHTML = `<img alt="New! sticker" src="../../assets/new.svg" />`;
-  sticker.style.top = `${window.innerHeight + 50}px`;
-
-  header.appendChild(sticker);
-
-  dragElement(sticker);
-  sticker.style.zIndex = windowManager.base;
-
-  sticker.addEventListener('mousedown', () => {
-    sticker.style.zIndex = windowManager.moveOnTop();
-  });
-
   // Navigation bar
   const navigationBar = document.createElement('nav');
   navigationBar.id ='header-nav';
@@ -803,7 +788,6 @@ window.addEventListener('resize', scheduleNavbarPosition);
     window.addEventListener('resize', () => {
       duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
       //sunscreen.style.top = `${window.innerHeight + 50}px`;
-      sticker.style.top = `${window.innerHeight + 50}px`;
 
       const canvas = document.querySelector('canvas');
       if (canvas) {

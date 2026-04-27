@@ -2,6 +2,30 @@
 @import '../../style/variables.module.scss';
 @import '../../style/animations.scss';
 
+#projects {
+  position: relative;
+}
+
+#new {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  cursor: $grab;
+  transform: rotateZ(-10deg);
+  padding: 0;
+  border-radius: 100px;
+  z-index: 5;
+
+  img {
+    border-radius: 100px;
+    margin-bottom: -0.5em;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    width: 190px;
+  }
+}
+
 #projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

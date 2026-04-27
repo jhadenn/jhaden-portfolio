@@ -156,7 +156,6 @@
   }
 }
 
-#new,
 #welcome,
 #japanese,
 #rays,
@@ -164,22 +163,6 @@
 .project-request {
   position: absolute;
   cursor: $grab;
-}
-
-#new {
-  left: 30px;
-  transform: rotateZ(-10deg);
-  padding: 0;
-  border-radius: 100px;
-
-  img {
-    border-radius: 100px;
-    margin-bottom: -0.5em;
-    animation: rotate 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-    width: 190px;
-  }
 }
 
 #welcome {
